@@ -52,6 +52,7 @@ body {
 }
 
 #main-left {
+  position: relative;
   background-color: aqua;
   width: 45vw;
   height: 100vh;
@@ -64,4 +65,26 @@ body {
   background-color: blue;
   width: 55vw;
   height: 100vh;
+}
+
+#logo-background {
+  position: absolute;
+  top: 10%; /* Position the overlay 33% from the top */
+  left: 0;
+  right: 0;
+  height: 100px; /* Set a specific height for the overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark, semi-transparent background */
+  background-image: url('https://www.skillfinder.com.au/media/wysiwyg/the-odin-project-logo-skill-finder-partners-page.png');
+  background-size: contain; /* Ensure the logo fits within the div */
+  background-repeat: no-repeat; /* Prevent the logo from repeating */
+  background-position: center; /* Center the logo within the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-background img{
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
 }
